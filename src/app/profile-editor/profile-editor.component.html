@@ -1,0 +1,24 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName">
+
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName">
+
+    <button type="submit" [disabled]="false">Submit</button>
+  </form>
+  <h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    {{product}}
+</h3>
+
+</div>
+
+<p *ngIf="900 > 700">
+  <button (click)="Onalert()">Notify Me</button>
+</p>
+
+

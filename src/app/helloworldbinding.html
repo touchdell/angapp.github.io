@@ -1,0 +1,34 @@
+
+
+<main class="container">
+
+  <!-- Preview -->
+  <section id="preview">
+    <h1>Angular Router Sample</h1>
+      <a class="button" routerLink="/component-cart" routerLinkActive="activebutton">Crisis Center</a> |
+      <a class="button" routerLink="/" routerLinkActive="activebutton">Heroes</a>
+    <router-outlet></router-outlet>
+    
+    <div style="display: none;">
+    <!-- This HTML represents the initial state for the tutorial. It is not intended to appear in the app. -->
+    <app-component-cart></app-component-cart>
+    
+    
+    <!-- This HTML snippet is for when the user first adds the routerlink navigation. -->
+
+    </div>
+
+    <section id="buttons">
+      <h2>Buttons</h2>
+      <div class="grid">
+        <button routerLink="/component-cart" routerLinkActive="activebutton"> Primary</button>
+        <button class="secondary" routerLink="/" routerLinkActive="activebutton">Secondary</button>
+        <button class="contrast">Contrast</button>
+      </div>
+    </section><!-- ./ Buttons -->
+
+    <app-name-editor></app-name-editor>
+    <app-profile-editor></app-profile-editor>
+ 
+  </section>
+
